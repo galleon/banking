@@ -1,0 +1,18 @@
+c Ann y
+c Bob n
+t Ann 200.0
+t Bob -50
+t Carl -20.05
+t Dan 1000.0
+r Carl
+t Bob +30.0
+r Ann
+c Bob y
+c Bill y
+t Bill
+plop
+t Bill 120.0
+x Tom
+c Tom n
+t Tom -20.0
+t Tom 200.0
