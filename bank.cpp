@@ -74,6 +74,12 @@ public:
         }
     }
 
+    void remove(std::string name) {
+        auto it = find_if(accounts.begin(), accounts.end(), [&name](Account& obj) {return obj.getName() == name;});
+
+        if (it != accounts.end()) accounts.erase(it);
+    }
+
     void set(const Account account) {
         accounts.push_back(account);
     }
@@ -105,7 +111,8 @@ int main(){
                             /**
                              * TO DO REMOVE ACCOUNT FROM VECTOR
                              **/
-                            std::cerr << "Thanks <" << name <<"> for banking with us. Account deleted " << endl;
+                            std::cerr << "Thanks " << name <<" for banking with us. Account deleted " << endl;
+                            bank.remove(name);
                         } else {
                             /**
                              * Only action remaining is t

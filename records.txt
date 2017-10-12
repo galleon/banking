@@ -16,3 +16,4 @@ x Tom
 c Tom n
 t Tom -20.0
 t Tom 200.0
+t Ann 50.0
